@@ -11,7 +11,7 @@ const install = Vue => {
   components.map(component => Vue.component(component.name, component))
 }
 
-// 判断吧是否直接引入文件
+// 判断是否直接引入文件
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
